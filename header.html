@@ -30,12 +30,12 @@
       <div class="logo">
         <h3>Logo</h3>
       </div>
-      <div class="menu">
-        <a href="#">Trang chủ</a>
-        <a href="#truyen">Cốt truyện</a>
-        <a href="#sanpham">Sản phẩm</a>
-        <a href="#return">Chính sách đổi trả</a>
-        <a href="#about">About</a>
+      <div id="menu" class="menu">
+        <a class="btn active" href="#">Trang chủ</a>
+        <a class="btn" href="#truyen">Cốt truyện</a>
+        <a class="btn" href="#sanpham">Sản phẩm</a>
+        <a class="btn" href="#ship">Chính sách đổi trả</a>
+        <a class="btn" href="#about">About</a>
       </div>
       <div class="icon">
         <a href="#!" onclick="openSearch()"><i class="bx bx-search"></i></a>
@@ -44,20 +44,28 @@
       </div>
     </section>
 
-
     <section class="banner"></section>
 
-    <section class="story container">
+    <section id="truyen" class="story container">
       <h3>Cốt truyện</h3>
-      <p>Cốt truyện là hình thức tổ chức cơ bản nhất của truyện; nó bao gồm các giai đoạn phát triển chính, một hệ thống sự kiện cụ thể được tổ chức theo yêu cầu tư tưởng và nghệ thuật nhất định, tạo thành một bộ phận cơ bản, quan trọng nhất trong hình thức động của các tác phẩm văn học, nhất là đối với các sáng tác thuộc các loại tự sự và kịch.</p>
+      <p>
+        Cốt truyện là hình thức tổ chức cơ bản nhất của truyện; nó bao gồm các
+        giai đoạn phát triển chính, một hệ thống sự kiện cụ thể được tổ chức
+        theo yêu cầu tư tưởng và nghệ thuật nhất định, tạo thành một bộ phận cơ
+        bản, quan trọng nhất trong hình thức động của các tác phẩm văn học, nhất
+        là đối với các sáng tác thuộc các loại tự sự và kịch.
+      </p>
     </section>
 
-    <section class="product container">
+    <section id="sanpham" class="product container">
       <h3>Sản phẩm</h3>
       <div class="product_content">
         <div id="myBtn" class="product_content_item">
           <div class="product_content_item_top">
-            <img src="https://www.elle.vn/wp-content/uploads/2019/10/kelbin-lei-cach-phoi-do-fashionista-tai-tuan-le-thoi-trang-seoul-xuan-he-2020.jpg" alt="">
+            <img
+              src="https://www.elle.vn/wp-content/uploads/2019/10/kelbin-lei-cach-phoi-do-fashionista-tai-tuan-le-thoi-trang-seoul-xuan-he-2020.jpg"
+              alt=""
+            />
             <div class="product_content_item_top_text">
               <h4>Ao khoac</h4>
               <p>asdasdsadasdasd</p>
@@ -65,28 +73,30 @@
           </div>
           <div class="product_content_item_bottom">
             <button>Mua ngay</button>
-            <button><i class='bx bx-plus'></i></button>
+            <button><i class="bx bx-plus"></i></button>
           </div>
 
           <div id="myModal" class="modal">
-
             <!-- Modal content -->
             <div class="modal-content">
               <h4 class="close">Ao khoac</h4>
               <div class="modal-content_row">
                 <div class="modal-content_row_img">
-                  <img src="https://www.elle.vn/wp-content/uploads/2019/10/kelbin-lei-cach-phoi-do-fashionista-tai-tuan-le-thoi-trang-seoul-xuan-he-2020.jpg" alt="" width="100%">
+                  <img
+                    src="https://www.elle.vn/wp-content/uploads/2019/10/kelbin-lei-cach-phoi-do-fashionista-tai-tuan-le-thoi-trang-seoul-xuan-he-2020.jpg"
+                    alt=""
+                    width="100%"
+                  />
                 </div>
                 <div class="modal-content_row_content">
                   <div class="modal-content_row_content_btn">
-                    <input type="number" value="1">
+                    <input type="number" value="1" />
                     <button>Thêm giỏ hàng</button>
                   </div>
                   <!-- <p>asdasndlaksndlkasd</p> -->
                 </div>
               </div>
             </div>
-          
           </div>
         </div>
         <!-- <div class="product_content_item">
@@ -98,35 +108,79 @@
       </div>
     </section>
 
-    <section class="ship"></section>
+    <section id="ship" class="ship"></section>
 
+    <button class="nut-mo-chatbox" onclick="moForm()">
+      <i class="bx bx-support"></i>
+    </button>
+    <div class="Chatbox" id="myForm">
+      <form action="" class="form-container">
+        <h3>Hỗ trợ khách hàng</h3>
+        <textarea
+          placeholder="Bạn hãy nhập lời nhắn.."
+          name="msg"
+          required
+        ></textarea>
+        <div class="Chatbox_btn">
+          <button type="submit" class="btn">Gửi</button>
+          <button
+            type="button"
+            class="btn nut-dong-chatbox"
+            onclick="dongForm()"
+          >
+            Đóng
+          </button>
+        </div>
+      </form>
+    </div>
 
     <script>
+      // Add active class to the current button (highlight it)
+      var header = document.getElementById("menu");
+      var btns = header.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+
       // Get the modal
       var modal = document.getElementById("myModal");
-      
+
       // Get the button that opens the modal
       var btn = document.getElementById("myBtn");
-      
+
       // Get the <span> element that closes the modal
       var span = document.getElementsByClassName("close")[0];
-      
-      // When the user clicks the button, open the modal 
-      btn.onclick = function() {
+
+      // When the user clicks the button, open the modal
+      btn.onclick = function () {
         modal.style.display = "block";
-      }
-      
+      };
+
       // When the user clicks on <span> (x), close the modal
-      span.onclick = function() {
+      span.onclick = function () {
         modal.style.display = "none";
-      }
-      
+      };
+
       // When the user clicks anywhere outside of the modal, close it
-      window.onclick = function(event) {
+      window.onclick = function (event) {
         if (event.target == modal) {
           modal.style.display = "none";
         }
+      };
+
+      // Chat box
+      /*Hàm Mở Form*/
+      function moForm() {
+        document.getElementById("myForm").style.display = "block";
       }
-      </script>
+      /*Hàm Đóng Form*/
+      function dongForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+    </script>
   </body>
 </html>
