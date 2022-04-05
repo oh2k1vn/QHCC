@@ -54,9 +54,13 @@ a {
   left: 0;
   right: 0;
 
+  background: transparent;
   color: #fff;
 
   z-index: 99;
+  transition: 0.4s;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   .menu {
     opacity: 0;
     visibility: hidden;
@@ -109,6 +113,10 @@ a {
     }
   }
 }
+.headerBg {
+  background: tomato;
+  opacity: 0.8;
+}
 
 .banner {
   background-image: url(https://wallpaperaccess.com/full/2637588.jpg);
@@ -138,34 +146,35 @@ a {
     font-weight: bold;
     position: relative;
     &::after {
-      animation: left 5s infinite linear;
+      animation: left 3s infinite linear;
       position: absolute;
       content: "";
       height: 5px;
-      right: 40%;
+      right: 35%;
       top: 50%;
       width: 5%;
       background-color: tomato;
       border-radius: 20px;
     }
     &::before {
-      animation: left 5s infinite linear;
+      animation: left 3s infinite linear;
       position: absolute;
       content: "";
       height: 5px;
       top: 50%;
-      left: 40%;
+      left: 35%;
       width: 5%;
       background-color: tomato;
       border-radius: 20px;
     }
   }
   &_content {
+    padding: 0 1rem;
     max-width: 1000px;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
     &_item {
       cursor: pointer;
       &_top {
@@ -290,6 +299,20 @@ a {
       &:nth-child(2) {
         margin: 0 20px;
       }
+    }
+  }
+  .product {
+    h3 {
+      &::after {
+        right: 40% !important;
+      }
+      &::before {
+        left: 40% !important;
+      }
+    }
+    &_content {
+      padding: 0 !important;
+      grid-template-columns: repeat(3, 1fr) !important;
     }
   }
 }
