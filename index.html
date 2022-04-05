@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <section id="header" class="container header row">
+      <input
+        type="checkbox"
+        hidden
+        class="header_mobile_input"
+        id="header_mobile"
+      />
+      <label for="header_mobile" class="menu_mobile"
+        ><i class="bx bx-menu"></i
+      ></label>
+      <label for="header_mobile" class="nav_overlay"></label>
+      <div class="logo">
+        <h3>Logo</h3>
+      </div>
+      <div id="menu" class="menu">
+        <a class="btn active" href="#">Trang chủ</a>
+        <a class="btn" href="#truyen">Cốt truyện</a>
+        <a class="btn" href="#sanpham">Sản phẩm</a>
+        <a class="btn" href="#ship">Chính sách đổi trả</a>
+        <a class="btn" href="#about">About</a>
+      </div>
+      <div class="icon">
+        <a href="#!" onclick="openSearch()"><i class="bx bx-search"></i></a>
+        <a href="#!"><i class="bx bx-user"></i></a>
+        <a href="#!"><i class="bx bx-cart"></i></a>
+      </div>
+    </section>
+
+    <section class="banner"></section>
+
+    <section id="truyen" class="story container">
+      <h3>Cốt truyện</h3>
+      <p>
+        Cốt truyện là hình thức tổ chức cơ bản nhất của truyện; nó bao gồm các
+        giai đoạn phát triển chính, một hệ thống sự kiện cụ thể được tổ chức
+        theo yêu cầu tư tưởng và nghệ thuật nhất định, tạo thành một bộ phận cơ
+        bản, quan trọng nhất trong hình thức động của các tác phẩm văn học, nhất
+        là đối với các sáng tác thuộc các loại tự sự và kịch.
+      </p>
+    </section>
+
+    <section id="sanpham" class="product container">
+      <h3>Sản phẩm</h3>
+      <div class="product_content">
+        <div id="myBtn" class="product_content_item">
+          <div class="product_content_item_top myBtn">
+            <img
+              src="https://www.elle.vn/wp-content/uploads/2019/10/kelbin-lei-cach-phoi-do-fashionista-tai-tuan-le-thoi-trang-seoul-xuan-he-2020.jpg"
+              alt=""
+            />
+            <div class="product_content_item_top_text">
+              <h4>Ao khoac</h4>
+              <p>asdasdsadasdasd</p>
+            </div>
+          </div>
+          <div class="product_content_item_bottom">
+            <button>Mua ngay</button>
+            <button><i class="bx bx-plus"></i></button>
+          </div>
+
+          <div class="modal">
+            <div class="modal-content">
+              <p><i class="arrow left"></i></p>
+              <span class="close close">×</span>
+              <p>Some text in the Modal. 1.</p>
+              <p><i class="arrow right"></i></p>
+            </div>
+          </div>
+        </div>
+        <div id="myBtn" class="product_content_item">
+          <div class="product_content_item_top myBtn">
+            <img
+              src="https://www.elle.vn/wp-content/uploads/2019/10/kelbin-lei-cach-phoi-do-fashionista-tai-tuan-le-thoi-trang-seoul-xuan-he-2020.jpg"
+              alt=""
+            />
+            <div class="product_content_item_top_text">
+              <h4>Ao khoac</h4>
+              <p>asdasdsadasdasd</p>
+            </div>
+          </div>
+          <div class="product_content_item_bottom">
+            <button>Mua ngay</button>
+            <button><i class="bx bx-plus"></i></button>
+          </div>
+
+          <div class="modal">
+            <div class="modal-content">
+              <p><i class="arrow left"></i></p>
+              <span class="close close">×</span>
+              <p>Some text in the Modal.. 3</p>
+              <p><i class="arrow right"></i></p>
+            </div>
+          </div>
+        </div>
+        <div id="myBtn" class="product_content_item">
+          <div class="product_content_item_top myBtn">
+            <img
+              src="https://www.elle.vn/wp-content/uploads/2019/10/kelbin-lei-cach-phoi-do-fashionista-tai-tuan-le-thoi-trang-seoul-xuan-he-2020.jpg"
+              alt=""
+            />
+            <div class="product_content_item_top_text">
+              <h4>Ao khoac</h4>
+              <p>asdasdsadasdasd</p>
+            </div>
+          </div>
+          <div class="product_content_item_bottom">
+            <button>Mua ngay</button>
+            <button><i class="bx bx-plus"></i></button>
+          </div>
+
+          <div class="modal">
+            <div class="modal-content">
+              <p><i class="arrow left"></i></p>
+              <span class="close close">×</span>
+              <p>Some text in the Modal. 2.</p>
+              <p><i class="arrow right"></i></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ship" class="ship"></section>
+
+    <button class="nut-mo-chatbox" onclick="moForm()">
+      <i class="bx bx-support"></i>
+    </button>
+    <div class="Chatbox" id="myForm">
+      <form action="" class="form-container">
+        <h3>Hỗ trợ khách hàng</h3>
+        <textarea
+          placeholder="Bạn hãy nhập lời nhắn.."
+          name="msg"
+          required
+        ></textarea>
+        <div class="Chatbox_btn">
+          <button type="submit" class="btn">Gửi</button>
+          <button
+            type="button"
+            class="btn nut-dong-chatbox"
+            onclick="dongForm()"
+          >
+            Đóng
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <script src="./javascrip.js"></script>
+  </body>
+</html>
