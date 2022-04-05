@@ -59,8 +59,7 @@ a {
 
   z-index: 99;
   transition: 0.4s;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+
   .menu {
     opacity: 0;
     visibility: hidden;
@@ -88,6 +87,12 @@ a {
     .btn:hover {
       background-color: tomato !important;
       color: white !important;
+    }
+  }
+  .logo {
+    text-align: center;
+    img {
+      width: 40%;
     }
   }
   .nav_overlay {
@@ -275,8 +280,17 @@ a {
 }
 
 @media screen and (min-width: 900px) {
+  .header {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
   .menu_mobile {
     display: none;
+  }
+  .logo {
+    img {
+      width: 45%;
+    }
   }
   .menu {
     opacity: 1 !important;
