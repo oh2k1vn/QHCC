@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giỏ hàng</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="cart.css" />
+  </head>
+  <body>
+    <section id="header" class="container header row">
+      <input
+        type="checkbox"
+        hidden
+        class="header_mobile_input"
+        id="header_mobile"
+      />
+      <label for="header_mobile" class="menu_mobile"
+        ><i class="bx bx-menu"></i
+      ></label>
+      <label for="header_mobile" class="nav_overlay"></label>
+      <div class="logo">
+        <img src="./assets/logo.svg" alt="" />
+      </div>
+      <div id="menu" class="menu">
+        <a class="btn active" href="/">Trang chủ</a>
+        <a class="btn" href="#Uniqlo">Uniqlo</a>
+        <a class="btn" href="#truyen">Câu truyện</a>
+        <a class="btn" href="#sanpham">Sản phẩm</a>
+        <a class="btn" href="#ship">Chính sách đổi trả</a>
+        <a class="btn" href="#about">Về chúng tôi</a>
+      </div>
+      <div class="icon">
+        <form id="content">
+          <input type="text" name="input" class="input" id="search-input" />
+          <button type="reset" class="search" id="search-btn"></button>
+        </form>
+        <a href="#!"><i class="bx bx-user"></i></a>
+        <a href="./cart.html"><i class="bx bx-cart"></i></a>
+      </div>
+    </section>
+
+    <section class="cart_body container">
+      <h1>Giỏ hàng</h1>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Sản phẩm</th>
+            <th>Giá</th>
+            <th>Số lượng</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="img_text">
+                <img
+                  src="https://www.elle.vn/wp-content/uploads/2019/10/kelbin-lei-cach-phoi-do-fashionista-tai-tuan-le-thoi-trang-seoul-xuan-he-2020.jpg"
+                  alt=""
+                />
+                <p>Sản phẩm hot nhất 20220</p>
+              </div>
+            </td>
+            <td>200.000 VNĐ</td>
+            <td>1</td>
+            <td><i class="bx bx-trash"></i></td>
+          </tr>
+          <tr>
+            <td>
+              <div class="img_text">
+                <img
+                  src="https://www.elle.vn/wp-content/uploads/2019/10/kelbin-lei-cach-phoi-do-fashionista-tai-tuan-le-thoi-trang-seoul-xuan-he-2020.jpg"
+                  alt=""
+                />
+              </div>
+            </td>
+            <td>200.000 VNĐ</td>
+            <td>1</td>
+            <td><i class="bx bx-trash"></i></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="total container">
+      <div class="total_item">
+        <h3>Thông tin khách hàng</h3>
+        <div class="total_item_input">
+          <div class="total_item_input-flex">
+            <div class="total_item_input-flex-inblock">
+              <label for="Name">Họ và tên <span>*</span></label>
+              <input
+                type="text"
+                class="total_item_input-text"
+                id="Name"
+                placeholder="Nhập họ và tên"
+              />
+            </div>
+            <div class="total_item_input-flex-inblock">
+              <label for="phone">Số điện thoại <span>*</span></label>
+              <input
+                type="text"
+                class="total_item_input-text"
+                id="phone"
+                placeholder="Nhập số điện thoại"
+              />
+            </div>
+          </div>
+          <label for="address">Địa chỉ <span>*</span></label>
+          <input
+            type="text"
+            class="total_item_input-text"
+            id="address"
+            placeholder="địa chỉ giao hàng"
+          />
+        </div>
+      </div>
+      <div class="total_item">
+        <h3>Thông tin thanh toán</h3>
+        <div class="total_item_input">
+          <p>Tổng giá tiền <span>200.000 VNĐ</span></p>
+          <p>Phí vận chuyển <span>20.000 VNĐ</span></p>
+          <p>Thuế <span>Free</span></p>
+        </div>
+        <h4>Tổng Tiền <span>220.000 VNĐ</span></h4>
+
+        <button>Thanh toán</button>
+      </div>
+    </section>
+  </body>
+</html>

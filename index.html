@@ -32,24 +32,27 @@
         <img src="./assets/logo.svg" alt="" />
       </div>
       <div id="menu" class="menu">
-        <a class="btn active" href="#">Trang chủ</a>
-        <a class="btn" href="#truyen">Cốt truyện</a>
+        <a class="btn active" href="/">Trang chủ</a>
         <a class="btn" href="#Uniqlo">Uniqlo</a>
+        <a class="btn" href="#truyen">Câu truyện</a>
         <a class="btn" href="#sanpham">Sản phẩm</a>
         <a class="btn" href="#ship">Chính sách đổi trả</a>
         <a class="btn" href="#about">Về chúng tôi</a>
       </div>
       <div class="icon">
-        <a href="#!" onclick="openSearch()"><i class="bx bx-search"></i></a>
+        <form id="content">
+          <input type="text" name="input" class="input" id="search-input" />
+          <button type="reset" class="search" id="search-btn"></button>
+        </form>
         <a href="#!"><i class="bx bx-user"></i></a>
-        <a href="#!"><i class="bx bx-cart"></i></a>
+        <a href="./cart.html"><i class="bx bx-cart"></i></a>
       </div>
     </section>
 
     <section class="banner"></section>
 
     <section id="truyen" class="story container">
-      <h3>Cốt truyện</h3>
+      <h3>Câu truyện</h3>
       <p>
         Cốt truyện là hình thức tổ chức cơ bản nhất của truyện; nó bao gồm các
         giai đoạn phát triển chính, một hệ thống sự kiện cụ thể được tổ chức
