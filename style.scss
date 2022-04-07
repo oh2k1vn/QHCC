@@ -120,8 +120,12 @@ a {
   }
   .icon {
     padding-right: 2rem;
+    display: flex;
     a {
       color: #fff;
+      &:nth-child(3) {
+        margin-left: 0.5rem;
+      }
     }
   }
 }
@@ -136,7 +140,7 @@ a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   &_block {
-    padding: 3rem;
+    padding: 1rem;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -153,7 +157,7 @@ a {
       width: 100%;
       border: 1.5px solid tomato;
       border-radius: 3rem;
-      padding: 1rem 0;
+      padding: 0.7rem 0;
       background: transparent;
       color: tomato;
       cursor: pointer;
@@ -174,14 +178,14 @@ a {
       width: 100%;
       text-align: center;
       &:nth-child(1) {
-        font-size: 2rem;
+        font-size: 1.2rem;
         font-weight: 600;
         color: tomato;
         overflow: hidden;
       }
       &:nth-child(2) {
         margin-top: 3rem;
-        font-size: 24px;
+        font-size: 1rem;
         color: rgb(83, 75, 42);
       }
     }
@@ -236,7 +240,7 @@ a {
       position: absolute;
       content: "";
       height: 5px;
-      right: 35%;
+      right: 26%;
       top: 50%;
       width: 5%;
       background-color: tomato;
@@ -248,7 +252,7 @@ a {
       content: "";
       height: 5px;
       top: 50%;
-      left: 35%;
+      left: 26%;
       width: 5%;
       background-color: tomato;
       border-radius: 20px;
@@ -405,6 +409,14 @@ a {
       }
       button {
         width: 30%;
+      }
+      p {
+        &:nth-child(1) {
+          font-size: 3rem;
+        }
+        &:nth-child(2) {
+          font-size: 2rem;
+        }
       }
     }
   }
