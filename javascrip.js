@@ -105,8 +105,8 @@ window.onscroll = function () {
 
 function scrollFunction() {
   if (
-    document.body.scrollTop > 700 ||
-    document.documentElement.scrollTop > 700
+    document.body.scrollTop > 600 ||
+    document.documentElement.scrollTop > 600
   ) {
     document.getElementById("header").style.background = "rgb(84, 84, 84)";
   } else {
