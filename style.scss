@@ -118,6 +118,12 @@ a {
       display: block;
     }
   }
+  .icon {
+    padding-right: 2rem;
+    a {
+      color: #fff;
+    }
+  }
 }
 .headerBg {
   background: tomato;
@@ -138,13 +144,13 @@ a {
     margin: auto;
     img {
       object-fit: cover;
-      width: 50%;
+      width: 100%;
       height: auto;
       border-radius: 20px;
       margin: 0 auto 1rem;
     }
     button {
-      width: 30%;
+      width: 100%;
       border: 1.5px solid tomato;
       border-radius: 3rem;
       padding: 1rem 0;
@@ -165,6 +171,8 @@ a {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      width: 100%;
+      text-align: center;
       &:nth-child(1) {
         font-size: 2rem;
         font-weight: 600;
@@ -184,7 +192,6 @@ a {
   margin-top: 1rem;
   padding: 1rem;
   border: 1px solid rgb(230, 228, 228);
-  border-radius: 10px;
   h3 {
     font-size: 24px;
     padding: 1rem 0 0.5rem 0.5rem;
@@ -327,7 +334,6 @@ a {
   padding: 2rem;
   background-color: rgba(0, 0, 0, 0.7);
   color: #fff;
-  border-radius: 20px;
   display: flex;
   flex-direction: column;
   h3 {
@@ -390,6 +396,19 @@ a {
       width: 45%;
     }
   }
+  .banner {
+    &_block {
+      img {
+        width: 50%;
+      }
+      button {
+        width: 30%;
+      }
+    }
+  }
+  .story {
+    border-radius: 10px;
+  }
   .menu {
     opacity: 1 !important;
     visibility: visible !important;
@@ -407,7 +426,6 @@ a {
     }
   }
   .icon {
-    padding-right: 2rem;
     a {
       &:nth-child(2) {
         margin: 0 1 0px;
@@ -436,6 +454,9 @@ a {
       padding: 0 !important;
       grid-template-columns: repeat(3, 1fr) !important;
     }
+  }
+  .about {
+    border-radius: 20px;
   }
 }
 
