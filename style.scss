@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap");
-
 //
 // Tác gi
 //
@@ -15,6 +14,7 @@ body {
   scroll-behavior: smooth;
   overflow-x: hidden;
   min-height: 100vh;
+  background: linear-gradient(#e66465, #fff, #9198e5);
 }
 ul,
 li {
@@ -192,6 +192,7 @@ a {
   margin-top: 1rem;
   padding: 1rem;
   border: 1px solid rgb(230, 228, 228);
+  background: rgba(0, 0, 0, 0.2);
   h3 {
     font-size: 24px;
     padding: 1rem 0 0.5rem 0.5rem;
@@ -296,9 +297,10 @@ a {
         display: flex;
         align-items: center;
         button {
+          outline: none;
           box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
           border: none;
-          background-color: transparent;
+          background-color: #fff;
           height: 40px;
           cursor: pointer;
           &:nth-child(1) {
