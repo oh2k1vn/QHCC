@@ -14,21 +14,27 @@ h1 {
   margin-top: 2rem;
   max-width: 1200px;
   width: 100%;
+
   .table {
     width: 100%;
     margin: auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
     thead {
       background-color: tomato;
       th {
+        width: 100%;
         padding: 0.5rem;
         color: #fff;
-        font-size: 22px;
+        font-size: 1rem;
+        padding: 0.5rem 2rem;
       }
     }
     tbody {
+      overflow-x: auto;
       tr {
         transition: 0.4s;
-        border-bottom: 3px solid #ccc;
         td {
           text-align: center;
 
@@ -56,7 +62,7 @@ h1 {
           background-color: #ddd;
         }
         &:nth-child(even) {
-          background-color: rgb(241, 241, 241);
+          background-color: #f2f2f2;
         }
       }
     }
@@ -68,12 +74,14 @@ h1 {
   max-width: 1200px;
   margin-top: 2rem;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   &_item {
-    border-radius: 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    border-top: 0.5rem solid #ddd;
+    border-bottom: 0.5rem solid #ddd;
     &:nth-child(1) {
-      width: 50%;
+      border-bottom: none;
       h3 {
         text-align: left;
         padding: 1rem;
@@ -121,7 +129,6 @@ h1 {
       }
     }
     &:nth-child(2) {
-      width: 40%;
       h3 {
         text-align: left;
         padding: 1rem;
@@ -158,12 +165,29 @@ h1 {
         font-size: 24px;
         text-transform: uppercase;
         transition: 0.4s;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
+
+        background-color: rgba(0, 0, 0, 0.6);
+        color: #fff;
         cursor: pointer;
         &:hover {
           background-color: tomato;
-          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .total {
+    flex-direction: row;
+    &_item {
+      width: 40%;
+      border-radius: 2rem;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+      &:nth-child(2) {
+        button {
+          border-bottom-right-radius: 1.7rem;
+          border-bottom-left-radius: 1.7rem;
         }
       }
     }
