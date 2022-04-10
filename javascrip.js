@@ -108,7 +108,7 @@ function scrollFunction() {
     document.body.scrollTop > 600 ||
     document.documentElement.scrollTop > 600
   ) {
-    document.getElementById("header").style.background = "rgb(84, 84, 84)";
+    document.getElementById("header").style.background = "rgba(0,0,0,.5)";
   } else {
     document.getElementById("header").style.background = "transparent";
   }

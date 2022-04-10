@@ -4,16 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" sizes="16x16" />
     <title>Trang chủ</title>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
+
+    <!-- Icon -->
     <link
       href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <!-- Css chính -->
     <link rel="stylesheet" href="style.css" />
+    <!-- css modal -->
+    <link rel="stylesheet" href="modal_product.css" />
+    <!-- Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
   <body>
@@ -35,9 +43,9 @@
       </div>
       <div id="menu" class="menu">
         <a class="btn active" href="#">Trang chủ</a>
-        <a class="btn" href="#Uniqlo">Uniqlo</a>
-        <a class="btn" href="#truyen">Câu truyện</a>
+        <a class="btn" href="#truyen">Câu chuyện</a>
         <a class="btn" href="#sanpham">Sản phẩm</a>
+        <a class="btn" href="#manage_material">Chất liệu & Bảo quản</a>
         <a class="btn" href="#ship">Chính sách đổi trả</a>
         <a class="btn" href="#about">Về chúng tôi</a>
       </div>
@@ -53,19 +61,17 @@
 
     <section class="banner">
       <div class="banner_block">
-        <img
-          src="https://vcdn1-ione.vnecdn.net/2015/05/07/street-style-mua-he-cua-thieu-2767-8495-1430994539.jpg?w=0&h=0&q=100&dpr=2&fit=crop&s=GBdKTp_3wqWztzud3HQfRA"
-          alt=""
-        />
+        <img src="./product/aothun1.png" alt="" />
+        <p class="banner_block_p">TSum01 Hawaii</p>
         <button>Mua ngay</button>
       </div>
       <div class="banner_block">
-        <p>“Gọi hè cùng Uniqlo”</p>
-        <p>Hè rực rỡ, hứng niềm vui</p>
+        <p class="banner_block_right">“Gọi hè cùng Uniqlo”</p>
+        <p class="banner_block_right">Hè rực rỡ, hứng niềm vui</p>
       </div>
     </section>
 
-    <section id="Uniqlo" class="story container">
+    <!-- <section id="Uniqlo" class="story container">
       <h3>Uniqlo</h3>
       <p>
         Thương hiệu Uniqlo cung cấp các mặt hàng thời trang dành cho 3 nhóm đối
@@ -77,14 +83,15 @@
         <li>Dòng sản phẩm Heattech</li>
         <li>Các dòng sản phẩm mang tính đột phá</li>
       </ul>
-    </section>
+    </section> -->
 
     <section id="truyen" class="story container">
-      <h3>Câu truyện</h3>
+      <h3>Câu chuyện</h3>
       <p>
         Sau khoảng thời gian dài mọi thứ bị đóng băng bởi dịch Covid-19 thì nhịp
         sống của tất cả mọi người đang dần quay về quỹ đạo vốn có. Chính vì vậy,
-        mùa hè năm nay, chúng tôi cho ra mắt bộ sưu tập “Gọi hè cùng Uniqlo”.
+        mùa hè năm nay, chúng tôi cho ra mắt bộ sưu tập
+        <span>“Gọi hè cùng Uniqlo”</span>.
         <br />
         Bộ sưu tập mùa hè năm nay được lấy cảm hứng từ vùng biển Hawaii. Nơi đây
         được xem là biểu tượng cho mùa hè với bãi cát trắng trải dài, dòng nước
@@ -102,17 +109,14 @@
       <div class="product_content">
         <div id="myBtn" class="product_content_item">
           <div class="product_content_item_top myBtn">
-            <img
-              src="https://www.elle.vn/wp-content/uploads/2019/10/kelbin-lei-cach-phoi-do-fashionista-tai-tuan-le-thoi-trang-seoul-xuan-he-2020.jpg"
-              alt=""
-            />
+            <img src="./product/aothunnu1.png" alt="" />
             <div class="product_content_item_top_text">
-              <h4>Ao khoac</h4>
-              <p>asdasdsadasdasd</p>
+              <h4>TSum01 Hawaii</h4>
+              <p>299.000 VND</p>
             </div>
           </div>
           <div class="product_content_item_bottom">
-            <button>Mua ngay</button>
+            <button onclick="submitForm">Mua ngay</button>
             <button><i class="bx bx-plus"></i></button>
           </div>
 
@@ -120,57 +124,39 @@
             <div class="modal-content">
               <p><i class="arrow left"></i></p>
               <span class="close close">×</span>
-              <p>Some text in the Modal. 1.</p>
-              <p><i class="arrow right"></i></p>
-            </div>
-          </div>
-        </div>
-        <div id="myBtn" class="product_content_item">
-          <div class="product_content_item_top myBtn">
-            <img
-              src="https://www.elle.vn/wp-content/uploads/2019/10/kelbin-lei-cach-phoi-do-fashionista-tai-tuan-le-thoi-trang-seoul-xuan-he-2020.jpg"
-              alt=""
-            />
-            <div class="product_content_item_top_text">
-              <h4>Ao khoac</h4>
-              <p>asdasdsadasdasd</p>
-            </div>
-          </div>
-          <div class="product_content_item_bottom">
-            <button>Mua ngay</button>
-            <button><i class="bx bx-plus"></i></button>
-          </div>
-
-          <div class="modal">
-            <div class="modal-content">
-              <p><i class="arrow left"></i></p>
-              <span class="close close">×</span>
-              <p>Some text in the Modal.. 3</p>
-              <p><i class="arrow right"></i></p>
-            </div>
-          </div>
-        </div>
-        <div id="myBtn" class="product_content_item">
-          <div class="product_content_item_top myBtn">
-            <img
-              src="https://www.elle.vn/wp-content/uploads/2019/10/kelbin-lei-cach-phoi-do-fashionista-tai-tuan-le-thoi-trang-seoul-xuan-he-2020.jpg"
-              alt=""
-            />
-            <div class="product_content_item_top_text">
-              <h4>Ao khoac</h4>
-              <p>asdasdsadasdasd</p>
-            </div>
-          </div>
-          <div class="product_content_item_bottom">
-            <button>Mua ngay</button>
-            <button><i class="bx bx-plus"></i></button>
-          </div>
-
-          <div class="modal">
-            <div class="modal-content">
-              <p><i class="arrow left"></i></p>
-              <span class="close close">×</span>
-              <p>Some text in the Modal. 2.</p>
+              <h4>TSum01 Hawaii</h4>
+              <div class="modal-content_body">
+                <div class="modal-content_body_item">
+                  <img src="./product/aothunnu1.png" alt="" />
+                </div>
+                <div class="modal-content_body_item">
+                  <ul class="sex">
+                    <li style="background-color: rgb(188, 188, 76)">Nam</li>
+                    <li style="background-color: brown">Nữ</li>
+                    <li style="background-color: chocolate">Trẻ em</li>
+                  </ul>
+                  <div class="size">
+                    <span>Size:</span>
+                    <ul>
+                      <li>S</li>
+                      <li>M</li>
+                      <li>L</li>
+                      <li>XL</li>
+                    </ul>
+                  </div>
+                  <div class="quantity">
+                    <label for="quantity">Số lượng</label>
+                    <input
+                      class="quantity_input"
+                      type="number"
+                      name=""
+                      value="1"
+                      id="quantity"
+                    />
+                  </div>
+                  <div class="price">299.000 VND</div>
+                </div>
+              </div>
               <p><i class="arrow right"></i></p>
             </div>
           </div>
@@ -178,9 +164,78 @@
       </div>
     </section>
 
-    <section id="ship" class="ship"></section>
+    <section id="manage_material" class="manage_material container">
+      <div class="manage_material_item">
+        <h4>Chất liệu</h4>
+        <p>
+          Trong Bộ sưu tập lần này, Uniqlo đã lựa chọn vải Viscose - loại vải tơ
+          bán tổng hợp được sản xuất từ chất xơ của cellulose từ gỗ cây như tre,
+          mía, đậu nành... là loại sợi tổng hợp. Sợi vải viscose có cấu trúc
+          tương tự như vải cotton, có đặc tính là mềm mại và thoáng mát nên được
+          ứng dụng rộng rãi trong nhiều lĩnh vực khác nhau.
+        </p>
+      </div>
+      <div class="manage_material_item">
+        <h4>Bảo quản</h4>
+        <ul>
+          <li>
+            Nên giặt bằng tay và dùng nước lạnh để giặt, lưu ý tránh vắt hoặc
+            làm xoăn bề mặt vải.
+          </li>
+          <li>
+            Để hấp thụ hết nước sau khi giặt nên dùng chiếc khăn bông khô mềm để
+            thấm hết nước trên đó và treo lên móc để sản phẩm khô tự nhiên.
+          </li>
+          <li>
+            Nếu giặt máy, nên chọn chế độ quay nhẹ nhàng nhất vì chất liệu rất
+            dễ bị co giãn.
+          </li>
+          <li>
+            Ngoài ra, cũng nên sử dụng các loại bột giặt dịu nhẹ, lành tính để
+            làm sạch vải. Tránh dùng những chất tẩy rửa mạnh vì sẽ khiến độ bền
+            và cấu trúc sợi vải bị phá vỡ.
+          </li>
+        </ul>
+      </div>
+    </section>
 
-    <section id="about" class="about container">
+    <section id="policy" class="policy container">
+      <div class="policy_body">
+        <h4>Chính sách đổi trả</h4>
+        <ul class="policy_body_ul">
+          <li>
+            Đổi trong vòng 15 ngày kể từ ngày mua ghi trên biên lai mua hàng.
+          </li>
+          <li>
+            Có đủ bản gốc biên lai mua hàng, và sản phẩm chưa qua sử dụng với
+            đầy đủ nhãn giá, nhãn sản phẩm và nhãn khác (nếu có).
+          </li>
+          <li>Chưa qua dịch vụ sửa đồ.</li>
+          <li>Không phải là sản phẩm lỗi được bán với giá giảm đặc biệt.</li>
+          <li>Đã được mua tại các cửa hàng UNIQLO Việt Nam.</li>
+          <li>
+            Những sản phẩm đóng gói chưa mở bao bì như: nội y, quần lót, tất
+            (vớ) và những sản phẩm khác.
+          </li>
+          <li>
+            Sản phẩm còn có giá trị bán ra thị trường (không bị làm bẩn, còn
+            mới, không bị rách, hoặc bị giặt ủi).
+          </li>
+          <li>
+            Chỉ chấp nhận việc đổi sản phẩm lấy sản phẩm khác có cùng giá hoặc
+            cao hơn giá mua ban đầu (Nếu giá cao hơn thì khách hàng phải trả
+            thêm phần chênh lệch).
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom"
+      id="about"
+      class="about container"
+    >
       <h3>Về chúng tôi</h3>
       <p>Tên công ty: UNIQLO VIETNAM CO., LTD</p>
       <br />
@@ -223,7 +278,7 @@
         </div>
       </form>
     </div>
-
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="./javascrip.js"></script>
   </body>
 </html>
