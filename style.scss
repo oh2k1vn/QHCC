@@ -594,6 +594,27 @@ input {
   }
 }
 
+@media screen and (max-width: 450px) {
+  .banner {
+    &_block {
+      p {
+        &:nth-child(1) {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+  .product {
+    &_content {
+      &_item {
+        img {
+          min-height: 292px;
+        }
+      }
+    }
+  }
+}
+
 h1 {
   margin-top: 300vh;
   bottom: 0;
