@@ -8,7 +8,6 @@ body {
 
 .header {
   background-color: rgb(84, 84, 84);
-  position: sticky;
 }
 .icon {
   position: relative;
@@ -29,7 +28,6 @@ h1 {
     border-collapse: collapse;
     border-spacing: 0;
     border: 1px solid #eee;
-    width: 100%;
     background-color: #fff;
     thead {
       background-color: tomato;
@@ -213,7 +211,20 @@ h1 {
     }
   }
 }
-
+@media screen and (max-width: 450px) {
+  .cart_body {
+    .table {
+      tbody {
+        .img_text {
+          display: table !important;
+          img {
+            margin: 0 !important;
+          }
+        }
+      }
+    }
+  }
+}
 #content {
   position: absolute;
   height: 50px;
