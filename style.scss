@@ -269,8 +269,8 @@ input {
 .manage_material {
   margin-top: 1rem;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
   .manage_material_item {
     padding: 1rem;
     border-radius: 20px;
@@ -588,6 +588,9 @@ input {
   }
   .about {
     border-radius: 20px;
+  }
+  .manage_material {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
