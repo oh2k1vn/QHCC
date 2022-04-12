@@ -15,6 +15,7 @@
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
+    border-radius: 20px;
     width: 70%;
     .close {
       color: #aaaaaa;
@@ -98,6 +99,21 @@
           font-size: 2rem;
           font-weight: bold;
           color: tomato;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .modal-content {
+    padding: 10px !important;
+    width: 100% !important;
+    .modal-content_body {
+      gap: 10px;
+      .modal-content_body_item {
+        img {
+          object-fit: contain;
         }
       }
     }

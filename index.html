@@ -7,22 +7,13 @@
     <link rel="icon" href="./favicon.ico" type="image/x-icon" sizes="16x16" />
     <title>Trang chủ</title>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
-
-    <!-- Icon -->
+    <link rel="stylesheet" href="./assets/css/normalize.min.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <!-- Css chính -->
-    <link rel="stylesheet" href="style.css" />
-    <!-- css modal -->
-    <link rel="stylesheet" href="modal_product.css" />
-    <!-- Jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/modal_product.css" />
   </head>
   <body>
     <section id="header" class="container header row">
@@ -50,14 +41,11 @@
         <a class="btn" href="#about">Về chúng tôi</a>
       </div>
       <div class="icon">
-        <form id="content">
-          <input type="text" name="input" class="input" id="search-input" />
-          <button type="reset" class="search" id="search-btn"></button>
-        </form>
         <a href="#!"><i class="bx bx-user"></i></a>
         <a href="./cart.html" class="icon_cart"
           ><i class="bx bx-cart"></i> <span>2</span></a
         >
+        <a href="#"><i class="bx bx-search"></i></a>
       </div>
     </section>
 
@@ -72,20 +60,6 @@
         <p class="banner_block_right">Hè rực rỡ, hứng niềm vui</p>
       </div>
     </section>
-
-    <!-- <section id="Uniqlo" class="story container">
-      <h3>Uniqlo</h3>
-      <p>
-        Thương hiệu Uniqlo cung cấp các mặt hàng thời trang dành cho 3 nhóm đối
-        tượng chính bao gồm: nam giới, phụ nữ và trẻ em. Chuyên sâu trong nghiên
-        cứu và các thử nghiệm xơ sợi mới, Uniqlo phân chia các sản phẩm của mình
-        theo 2 dòng “vật liệu” chính như:
-      </p>
-      <ul>
-        <li>Dòng sản phẩm Heattech</li>
-        <li>Các dòng sản phẩm mang tính đột phá</li>
-      </ul>
-    </section> -->
 
     <section id="truyen" class="story container">
       <h3>Câu chuyện</h3>
@@ -237,7 +211,7 @@
               <h4>SMSum01 Hawaii</h4>
               <div class="modal-content_body">
                 <div class="modal-content_body_item">
-                  <img src="./product/SMSum01 Hawaii (Mặt sau)(1).png" alt="" />
+                  <img src="./product/SMSum02 Hawaii (Mặt sau).png" alt="" />
                 </div>
                 <div class="modal-content_body_item">
                   <ul class="sex">
@@ -274,7 +248,7 @@
 
         <div id="myBtn" class="product_content_item">
           <div class="product_content_item_top myBtn">
-            <img src="./product/SMSum02 Hawaii (Mặt trước).png.png" alt="" />
+            <img src="./product/SMSum01 Hawaii (Mặt trước).png" alt="" />
             <div class="product_content_item_top_text">
               <h4>SMSum02 Hawaii</h4>
               <p>329.000 VND</p>
@@ -292,7 +266,10 @@
               <h4>SMSum02 Hawaii</h4>
               <div class="modal-content_body">
                 <div class="modal-content_body_item">
-                  <img src="./product/SMSum01 Hawaii (Mặt sau).png" alt="" />
+                  <img
+                    src="./product/SMSum01 Hawaii (Mặt sau) (3).png"
+                    alt=""
+                  />
                 </div>
                 <div class="modal-content_body_item">
                   <ul class="sex">
@@ -789,8 +766,25 @@
       <p>Giờ làm việc: 9:00 - 18:00 (Thứ Hai - Chủ Nhật)</p>
     </section>
 
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="./javascrip.js"></script>
+    <!-- <div class="icon_all"> -->
+    <img
+      class="icon_body"
+      style="bottom: 15%"
+      src="./assets/icon/phone-1439840_960_720.webp"
+      alt=""
+    />
+    <img
+      class="icon_body"
+      style="bottom: 5%"
+      src="./assets/icon/Facebook-Messenger-200.png"
+      alt=""
+    />
+    <!-- </div> -->
+
+    <script src="./assets/js/javascrip.js"></script>
+    <script src="./assets/js/modal.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
+
     <script>
       function submitForm() {
         alert("Mua sản phẩm thành công!");
