@@ -41,11 +41,46 @@
         <a class="btn" href="#about">Về chúng tôi</a>
       </div>
       <div class="icon">
-        <a href="#!"><i class="bx bx-user"></i></a>
+        <a id="myBtn_login" href="#!"><i class="bx bx-user"></i></a>
         <a href="./cart.html" class="icon_cart"
           ><i class="bx bx-cart"></i> <span>2</span></a
         >
         <a href="#"><i class="bx bx-search"></i></a>
+      </div>
+      <!-- modal login -->
+      <div id="myModal_login" class="modal_login">
+        <!-- Nội dung form đăng nhập -->
+        <div class="modal-content_login">
+          <form class="modal-content_body" action="#">
+            <span class="close_login">&times;</span>
+            <h2>Shop <span>UNIQLO</span></h2>
+            <div class="fomrgroup_login">
+              <label for="tk">Tài khoản:</label>
+              <input
+                type="text"
+                name="username"
+                id="tk"
+                placeholder="Nhập tài khoản "
+              />
+            </div>
+            <div class="fomrgroup_login">
+              <label for="mk">Mật khẩu:</label>
+              <input
+                type="passWord"
+                id="mk"
+                name="passWord"
+                placeholder="Nhập mật khẩu"
+              />
+            </div>
+            <div class="fomrgroup_login">
+              <button>Đăng nhập</button>
+              <p style="margin: 1rem 0 0 0; color: darkgrey">
+                Bạn chưa có tài khoản?
+                <span>Đăng ký ngay</span>
+              </p>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
 

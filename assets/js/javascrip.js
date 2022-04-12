@@ -114,13 +114,28 @@ function scrollFunction() {
   }
 }
 
-// updated 2019
-const input = document.getElementById("search-input");
-const searchBtn = document.getElementById("search-btn");
+// lấy phần Modal
+var modalLogin = document.getElementById("myModal_login");
+console.log(modalLogin);
+// Lấy phần button mở Modal
+var btnLogin = document.getElementById("myBtn_login");
 
-const expand = () => {
-  searchBtn.classList.toggle("close");
-  input.classList.toggle("square");
+// Lấy phần span đóng Modal
+var spanLogin = document.getElementsByClassName("close_login")[0];
+
+// Khi button được click thi mở Modal
+btnLogin.onclick = function () {
+  modalLogin.style.display = "block";
 };
 
-searchBtn.addEventListener("click", expand);
+// Khi span được click thì đóng Modal
+spanLogin.onclick = function () {
+  modalLogin.style.display = "none";
+};
+
+// Khi click ngoài Modal thì đóng Modal
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modalLogin.style.display = "none";
+  }
+};
