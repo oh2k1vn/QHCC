@@ -18,7 +18,7 @@ h1 {
 }
 
 .cart_body {
-  margin-top: 2rem;
+  padding-top: 5rem;
   max-width: 1200px;
   width: 100%;
 
@@ -192,6 +192,24 @@ h1 {
       }
     }
   }
+
+  input {
+    box-sizing: border-box;
+    width: 17px;
+    height: 17px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    background: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Roboto;
+    outline: 0;
+    transition: width 0.4s ease-in-out, border-radius 0.8s ease-in-out,
+      padding 0.2s;
+    transition-delay: 0.4s;
+    transform: translate(-100%, 82%);
+  }
 }
 
 @media screen and (min-width: 900px) {
@@ -247,112 +265,66 @@ h1 {
   animation-iteration-count: 1;
 }
 
-input {
-  box-sizing: border-box;
-  width: 17px;
-  height: 17px;
-  border: 3px solid #fff;
-  border-radius: 50%;
-  background: none;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 400;
-  font-family: Roboto;
-  outline: 0;
-  transition: width 0.4s ease-in-out, border-radius 0.8s ease-in-out,
-    padding 0.2s;
-  transition-delay: 0.4s;
-  transform: translate(-100%, 82%);
-}
-
-.search {
-  background: none;
-  position: absolute;
-  top: 46%;
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 99;
+  top: 0;
   left: 0;
-  height: 20px;
-  width: 20px;
-  padding: 0;
-  border-radius: 100%;
-  outline: 0;
-  border: 0;
-  color: inherit;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.overlay-content {
+  position: relative;
+  top: 46%;
+  width: 80%;
+  text-align: center;
+  margin-top: 30px;
+  margin: auto;
+  form {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
   cursor: pointer;
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
-  -webkit-transform: translate(-100%, -50%);
-  -ms-transform: translate(-100%, -50%);
-  transform: translate(-100%, -50%);
+  color: white;
 }
 
-.search:before {
-  content: "";
-  position: absolute;
-  width: 8px;
-  height: 2px;
-  background-color: #fff;
-  transform: rotate(45deg);
-  margin-top: 7px;
-  margin-left: 7px;
-  transition: 0.2s ease-in-out;
+.overlay .closebtn:hover {
+  color: #ccc;
 }
 
-.close {
-  -webkit-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
-  -webkit-transition-delay: 0.4s;
-  transition-delay: 0.4s;
+.overlay input[type="text"] {
+  padding: 15px;
+  font-size: 17px;
+  border: none;
+  width: 80%;
+  background: white;
 }
 
-.close:before {
-  content: "";
-  position: absolute;
-  width: 27px;
-  height: 4px;
-  margin-top: -1px;
-  margin-left: -13px;
-  background-color: #fff;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
+.overlay input[type="text"]:hover {
+  background: #f1f1f1;
 }
 
-.close:after {
-  content: "";
-  position: absolute;
-  width: 27px;
-  height: 4px;
-  background-color: #fff;
-  margin-top: -1px;
-  margin-left: -13px;
+.overlay button {
+  width: 20%;
+  padding: 15px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
   cursor: pointer;
-  -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+  font-weight: bold;
 }
 
-.square {
-  box-sizing: border-box;
-  padding: 0 40px 0 10px;
-  width: 300px;
-  height: 50px;
-  border: 2px solid #ffffff;
-  border-radius: 10px;
-  background: rgba(0, 0, 0, 0.8);
-  color: #fff;
-  font-family: Roboto;
-  font-size: 16px;
-  font-weight: 400;
-  outline: 0;
-  -webkit-transition: width 0.4s ease-in-out, border-radius 0.4s ease-in-out,
-    padding 0.2s;
-  transition: width 0.4s ease-in-out, border-radius 0.4s ease-in-out,
-    padding 0.2s;
-  -webkit-transition-delay: 0.4s, 0s, 0.4s;
-  transition-delay: 0.4s, 0s, 0.4s;
-  -webkit-transform: translate(-100%, -50%);
-  -ms-transform: translate(-100%, -50%);
-  transform: translate(-97%, 0%);
+.overlay button:hover {
+  background: #bbb;
 }
