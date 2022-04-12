@@ -45,7 +45,9 @@
         <a href="./cart.html" class="icon_cart"
           ><i class="bx bx-cart"></i> <span>2</span></a
         >
-        <a href="#"><i class="bx bx-search"></i></a>
+        <a href="#" class="openBtn" onclick="openSearch()"
+          ><i class="bx bx-search"></i
+        ></a>
       </div>
       <!-- modal login -->
       <div id="myModal_login" class="modal_login">
@@ -79,6 +81,23 @@
                 <span>Đăng ký ngay</span>
               </p>
             </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- modal search -->
+      <div id="myOverlay" class="overlay">
+        <span class="closebtn" onclick="closeSearch()" title="Close Overlay"
+          >×</span
+        >
+        <div class="overlay-content">
+          <form action="/action_page.php">
+            <input
+              type="text"
+              placeholder="Tìm kiếm sản phẩm..."
+              name="search"
+            />
+            <button type="submit">Tìm kiếm</button>
           </form>
         </div>
       </div>

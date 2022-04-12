@@ -139,3 +139,12 @@ window.onclick = function (event) {
     modalLogin.style.display = "none";
   }
 };
+
+// search
+function openSearch() {
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function closeSearch() {
+  document.getElementById("myOverlay").style.display = "none";
+}
