@@ -497,6 +497,13 @@ input {
   width: 7%;
   cursor: pointer;
 }
+.messenger {
+  width: 6.5%;
+  position: fixed;
+  right: 2%;
+  bottom: 5%;
+  cursor: pointer;
+}
 
 @keyframes fadeID {
   from {
@@ -634,8 +641,13 @@ input {
     grid-template-columns: repeat(2, 1fr);
   }
   .icon_body {
-    right: 2%;
+    right: 1.8%;
     width: 4%;
+  }
+  .messenger {
+    width: 3.5%;
+    right: 2%;
+    bottom: 5%;
   }
 }
 @media screen and (max-width: 899px) {
@@ -687,6 +699,11 @@ input {
   .icon_body {
     right: 2%;
     width: 12%;
+  }
+  .messenger {
+    width: 11.5%;
+    right: 2%;
+    bottom: 5%;
   }
 }
 
