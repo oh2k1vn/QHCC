@@ -96,7 +96,7 @@ input {
   .logo {
     text-align: center;
     img {
-      width: 40%;
+      max-width: 7rem;
     }
   }
   .nav_overlay {
@@ -153,7 +153,7 @@ input {
 }
 
 .banner {
-  background-image: url(../banner.png);
+  background-image: url(../banner.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -551,6 +551,11 @@ input {
         background-color: tomato;
       }
     }
+    .logo {
+      img {
+        max-width: 16rem !important;
+      }
+    }
   }
   .menu_mobile {
     display: none;
@@ -564,7 +569,8 @@ input {
   .banner {
     &_block {
       img {
-        width: 50%;
+        max-width: 23rem;
+        width: 100%;
       }
       button {
         width: 30%;
@@ -671,6 +677,11 @@ input {
         }
       }
     }
+    .logo {
+      img {
+        max-width: 7rem;
+      }
+    }
   }
 }
 
@@ -695,7 +706,13 @@ input {
       }
     }
   }
-
+  .header {
+    .logo {
+      img {
+        max-width: 6rem;
+      }
+    }
+  }
   .icon_body {
     right: 2%;
     width: 12%;
