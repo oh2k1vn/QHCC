@@ -237,6 +237,19 @@ input {
   padding: 1rem;
   border: 1px solid #e6e4e4;
   background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  .story_body {
+    width: 50%;
+    &:nth-child(1) {
+      flex: 1;
+    }
+    &:nth-child(2) {
+      width: 35%;
+      img {
+        width: 100%;
+      }
+    }
+  }
   h3 {
     font-weight: bold;
     font-size: 24px;
@@ -255,7 +268,9 @@ input {
   }
   p {
     line-height: 1.5rem;
-    margin-left: 2rem;
+    padding-right: 1rem;
+    word-wrap: break-word;
+    margin-left: 1rem;
     span {
       font-style: italic;
       font-weight: bold;
